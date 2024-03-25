@@ -3,3 +3,39 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/*
+Sezione header
+*/
+
+header {
+    background-color: rgb(255, 92, 31);
+    position: fixed;
+    width: 100%;
+}
+
+header .row {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    height: 50px;
+    font-size: 15px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+header img {
+    height: 20px;
+}
+
+.top-left li {
+    margin-right: 10px;
+}
