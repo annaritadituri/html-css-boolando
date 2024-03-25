@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 /*
@@ -11,7 +12,9 @@ Sezione header
 header {
     background-color: rgb(255, 92, 31);
     position: fixed;
+    top: 0;
     width: 100%;
+    z-index: 5;
 }
 
 header .row {
@@ -22,6 +25,7 @@ header .row {
     justify-content: space-between;
     align-items: center;
     color: white;
+    font-weight: 600;
     height: 50px;
     font-size: 15px;
 }
@@ -38,4 +42,80 @@ header img {
 
 .top-left li {
     margin-right: 10px;
+}
+
+
+/*
+Sezione prodotti
+*/
+
+main .row {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.product {
+    width: calc((100% - 30px) / 3);
+    margin-top: 30px;
+    position: relative;
+}
+
+main img {
+    width: 100%;
+}
+
+.brand-name {
+    color: gray;
+    font-size: 10px;
+}
+
+.sale {
+    color: red;
+    font-size: 13px;
+}
+
+.price {
+    color: gray;
+    text-decoration-line: line-through;
+    font-size: 13px;
+}
+
+.total {
+    text-decoration-line: none;
+    color: red;
+}
+
+.favorite {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    background-color: white;
+    padding: 8px 10px;
+}
+
+.on-image {
+    position: absolute;
+    bottom: 80px;
+}
+
+.sale-percent, .label {
+    font-size: 9px;
+    font-weight: 600;
+    padding: 3px 8px;
+}
+
+.sale-percent {
+    background-color: red;
+    color: white;
+}
+
+.label {
+    background-color: green;
+    color: white;
 }
