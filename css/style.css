@@ -149,3 +149,55 @@ Funzionalità con hover
 .product:hover .hover-image {
     display: block;
 }
+
+/*
+Sezione footer
+*/
+
+footer {
+    color: white;
+    background-color: rgb(24, 24, 24);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 10px;
+}
+
+footer .row {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bottom-left span {
+    margin-right: 5px;
+}
+
+.shop-name {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.social {
+    margin-top: 8px;
+}
+
+.icons {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    margin-right: 3px;
+    border-radius: 2px;
+}
+
+.icons img{
+    height: 100%;
+    width: 100%;
+}
