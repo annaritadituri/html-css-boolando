@@ -70,6 +70,15 @@ main img {
     width: 100%;
 }
 
+.hover-image {
+    width: 100%;
+    margin-bottom: 4px;
+}
+
+main .hover-image {
+    display: none;
+}
+
 .brand-name {
     color: gray;
     font-size: 10px;
@@ -97,6 +106,7 @@ main img {
     right: 0;
     background-color: white;
     padding: 8px 10px;
+    display: none;
 }
 
 .on-image {
@@ -118,4 +128,24 @@ main img {
 .label {
     background-color: green;
     color: white;
+}
+
+/*
+Funzionalità con hover
+*/
+
+.product:hover .favorite{
+    display: block;
+}
+
+.favorite:hover {
+    color: red;
+}
+
+.product:hover .image {
+    display: none;
+}
+
+.product:hover .hover-image {
+    display: block;
 }
